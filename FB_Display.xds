@@ -1,0 +1,66 @@
+{
+    "name": "FB_Display",
+    "settings": {
+        "urlPrefix": "http://localhost/published%20projects/touch/FB_Display/",
+        "spacesToIndent": 4,
+        "exportPath": "E:/Program/System/Web/wamp/www/published projects/touch/FB_Display",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.2.1",
+    "xdsBuild": 951,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000500,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "cd1fba77-dcf5-4bb1-81f9-48099f0a00f4": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "903fe24c-c74f-4c19-b9d4-fda8551f5ab3": {
+            "paths": [
+                "metadata/controller/mainController",
+                "app/controller/override/mainController.js",
+                "app/controller/mainController.js"
+            ],
+            "className": "mainController"
+        },
+        "37c97f1f-4e0d-4af3-b018-6d2c854c22e9": {
+            "paths": [
+                "metadata/view/mainNavView",
+                "app/view/override/mainNavView.js",
+                "app/view/mainNavView.js"
+            ],
+            "className": "mainNavView"
+        },
+        "c6a4f574-f437-49dc-9e61-12b248823cdd": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js"
+            ],
+            "className": "MyTabPanel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "37c97f1f-4e0d-4af3-b018-6d2c854c22e9",
+            "c6a4f574-f437-49dc-9e61-12b248823cdd"
+        ],
+        "store": [],
+        "controller": [
+            "903fe24c-c74f-4c19-b9d4-fda8551f5ab3"
+        ],
+        "model": [],
+        "resource": [
+            "cd1fba77-dcf5-4bb1-81f9-48099f0a00f4"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

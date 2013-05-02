@@ -1,0 +1,78 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "docked": null,
+        "fullscreen": null,
+        "hidden": null,
+        "id": "tabPanel",
+        "designer|userClassName": "MyTabPanel"
+    },
+    "designerId": "c6a4f574-f437-49dc-9e61-12b248823cdd",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Home",
+                "id": "homeTab",
+                "itemId": "HomeTab",
+                "designer|userClassName": "MyContainer",
+                "designer|displayName": "Home",
+                "layout": null
+            },
+            "designerId": "63b287cb-391a-476f-bb9b-0829c91ae14c",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 201,
+                        "html": null,
+                        "designer|userClassName": "MyImg",
+                        "src": "https://graph.facebook.com/duchuy.luu/picture"
+                    },
+                    "designerId": "1409fa8c-523a-4f3d-90ce-ac10c8519026"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 2",
+                "designer|userClassName": "MyContainer1"
+            },
+            "designerId": "f00e6eb4-791f-4b58-b69b-97453a7f7834"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 3",
+                "designer|userClassName": "MyContainer2"
+            },
+            "designerId": "1875232c-77f6-434a-9073-f2e4225f91f5"
+        }
+    ]
+}

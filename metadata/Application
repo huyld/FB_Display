@@ -1,0 +1,20 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "homeFB",
+            "mainPanel",
+            "MyTabPanel"
+        ],
+        "controllers": [
+            "mainController"
+        ],
+        "name": "fb_display"
+    },
+    "designerId": "application"
+}

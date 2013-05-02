@@ -1,0 +1,159 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "mainNavView",
+            "MyTabPanel"
+        ],
+        "designer|userClassName": "mainController"
+    },
+    "designerId": "903fe24c-c74f-4c19-b9d4-fda8551f5ab3",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MainPanel",
+                "ref": "MainPanel",
+                "selector": "#mainPanel"
+            },
+            "designerId": "b0fbaa31-2a13-44ea-87ef-91b59057682b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "TabPanel",
+                "ref": "TabPanel",
+                "selector": "#tabPanel"
+            },
+            "designerId": "7a820444-e8fc-4324-aa8b-f316e758f340"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "LoginPanel",
+                "ref": "LoginPanel",
+                "selector": "#loginPanel"
+            },
+            "designerId": "53969419-5b8f-4281-baae-92b1741d1b1f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onMainNavViewActivate",
+                "fn": "onMainNavViewActivate",
+                "implHandler": [
+                    "// Additional JS functions here\r",
+                    "window.fbAsyncInit = function() {\r",
+                    "    FB.init({\r",
+                    "        appId      : '157710384393835', // App ID\r",
+                    "        channelUrl : 'channel.html', // Channel File\r",
+                    "        status     : true, // check login status\r",
+                    "        cookie     : true, // enable cookies to allow the server to access the session\r",
+                    "        oauth      : true, // enable OAuth 2.0\r",
+                    "        xfbml      : true  // parse XFBML\r",
+                    "    });\r",
+                    "\r",
+                    "    // Additional init code here\r",
+                    "    FB.getLoginStatus(function(response) {\r",
+                    "        if (response.status === 'connected') {\r",
+                    "            // connected\r",
+                    "            testAPI();\r",
+                    "            alert('logged in (getLoginStatus)');\r",
+                    "            //var goHomeBtn = Ext.getCmp(\"homeBtn\");\r",
+                    "            //goHomeBtn.show();\r",
+                    "        } else if (response.status === 'not_authorized') {\r",
+                    "            // not_authorized\r",
+                    "            login();\r",
+                    "        } else {\r",
+                    "            // not_logged_in\r",
+                    "            login();\r",
+                    "        }\r",
+                    "    })\t;\r",
+                    "};\r",
+                    "\r",
+                    "\r",
+                    "function login() {\r",
+                    "    FB.login(function(response) {\r",
+                    "        if (response.authResponse) {\r",
+                    "            // connected\r",
+                    "        } else {\r",
+                    "            // cancelled\r",
+                    "        }\r",
+                    "    });\r",
+                    "}\r",
+                    "\r",
+                    "function testAPI() {\r",
+                    "    console.log('Welcome!  Fetching your information.... ');\r",
+                    "    FB.api('/me', function(response) {\r",
+                    "        console.log('Good to see you, ' + response.name + '.');\r",
+                    "    });\r",
+                    "}\r",
+                    "\r",
+                    "\r",
+                    "// Load the SDK Asynchronously\r",
+                    "// Load the SDK's source Asynchronously\r",
+                    "// Note that the debug version is being actively developed and might \r",
+                    "// contain some type checks that are overly strict. \r",
+                    "// Please report such bugs using the bugs tool.\r",
+                    "/*(function(d, s, id, debug){\r",
+                    "var js, fjs = d.getElementsByTagName(s)[0];\r",
+                    "if (d.getElementById(id)) {return;}\r",
+                    "js = d.createElement(s); js.id = id;\r",
+                    "js.src = \"http://connect.facebook.net/en_US/all\" + (debug ? \"/debug\" : \"\") + \".js\";\r",
+                    "fjs.parentNode.insertBefore(js, fjs);\r",
+                    "}(document, 'script', 'facebook-jssdk', debug false));*/\r",
+                    "(function(d){\r",
+                    "    var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}\r",
+                    "    js = d.createElement('script'); js.id = id; js.async = true;\r",
+                    "    js.src = \"all.js\";\r",
+                    "    d.getElementsByTagName('head')[0].appendChild(js);\r",
+                    "}(document));"
+                ],
+                "name": "activate",
+                "designer|targetType": "mainNavView",
+                "designer|controlQuery": "#mainNavView"
+            },
+            "designerId": "0561ad86-e410-4419-9ac8-231e04687cf2"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "HomeBtn",
+                "ref": "HomeBtn",
+                "selector": "#homeBtn",
+                "xtype": "button"
+            },
+            "designerId": "822261fd-dd10-420c-ba06-dbdcfb12fe5f"
+        }
+    ]
+}

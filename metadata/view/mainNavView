@@ -1,0 +1,85 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "html": null,
+        "id": "mainNavView",
+        "styleHtmlContent": true,
+        "ui": "",
+        "designer|userClassName": "mainNavView",
+        "designer|initialView": true
+    },
+    "designerId": "37c97f1f-4e0d-4af3-b018-6d2c854c22e9",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "<div class=\"fb-login-button\" data-show-faces=\"true\" data-width=\"100\" data-max-rows=\"1\"></div>",
+                "id": "loginPanel",
+                "style": "background-color: #fee",
+                "styleHtmlContent": true,
+                "designer|userClassName": "logginPanel"
+            },
+            "designerId": "db3e6459-3a06-4489-9b9a-dfaa7a78f1b2",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "goHome",
+                        "docked": null,
+                        "hidden": null,
+                        "id": "homeBtn",
+                        "itemId": "homeBtn",
+                        "padding": null,
+                        "ui": null,
+                        "designer|userClassName": "MyButton",
+                        "text": "Home"
+                    },
+                    "designerId": "51e47672-d51c-4fb4-bab4-88b8883cd07d",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onHomeBtnTap",
+                                "fn": "onHomeBtnTap",
+                                "implHandler": [
+                                    "this.push(Ext.create('fb_display.view.MyTabPanel'), { \r",
+                                    "    title: \"tabPanel\"\r",
+                                    "});"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "ef3c6de1-538c-493e-9b8d-c49ca6997577"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
